@@ -1,5 +1,38 @@
-# NotAnotherCartProject
+# Not Another Cart Project
 
+The Cart project is a TypeScript project that simulates a shopping cart functionality. It allows users to create a user, add items to the cart, remove items from the cart, calculate the total price of items in the cart, and print the contents of the cart.
+
+## Project Structure
+The project consists of the following files:
+
+* `types.ts`: Contains the type definitions and functions related to the project.
+* `index.ts`: Contains the driver code that emulates a front-end user and demonstrates the usage of the functions.
+
+## Types
+The project defines the following types:
+
+* *Item*: Represents an item in the cart, with properties including id, name, price, and description.
+* *User*: Represents a user, with properties including id, name, age, and cart.
+
+## Functions
+The project provides the following functions:
+
+* `createUser(name: string, age: number): User`: Creates a user object with an auto-generated UUID and initializes an empty cart.
+* `createItem(name: string, price: number, description: string): Item`: Creates an item object with an auto-generated UUID.
+* `addToCart(item: Item, user: User): void`: Adds an item to the user's cart.
+* `removeFromCart(item: Item, user: User): void`: Removes all instances of an item from the user's cart.
+* `removeQuantityFromCart(item: Item, user: User, quantity: number): void`: Removes a specified quantity of instances of an item from the user's cart.
+* `cartTotal(user: User): number`: Calculates the total price of all items in the user's cart.
+* `printCart(user: User): void`: Prints the items in the user's cart.
+
+## Usage
+To use the Cart project, follow these steps:
+
+1. Create a user using the createUser function, providing a name and age.
+2. Create items using the createItem function, providing a name, price, and description.
+3. Use the provided functions (addToCart, removeFromCart, removeQuantityFromCart, cartTotal, printCart) to interact with the user's cart.
+
+You can refer to the included `index.ts` file for an example of how to use the functions.
 
 ## Setup
 ### Step 1: Create a TypeScript Project
