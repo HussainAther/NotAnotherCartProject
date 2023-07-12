@@ -28,16 +28,14 @@ The project provides the following functions:
 ## Usage
 To use the Cart project, follow these steps:
 
-1. Create a user using the createUser function, providing a name and age.
-2. Create items using the createItem function, providing a name, price, and description.
-3. Use the provided functions (addToCart, removeFromCart, removeQuantityFromCart, cartTotal, printCart) to interact with the user's cart.
+1. Create a user using the `createUser` function, providing a name and age.
+2. Create items using the `createItem` function, providing a name, price, and description.
+3. Use the provided functions (`addToCart`, `removeFromCart`, `removeQuantityFromCart`, `cartTotal`, `printCart`) to interact with the user's cart.
 
 You can refer to the included `index.ts` file for an example of how to use the functions.
 
 ## Setup
 ### Step 1: Create a TypeScript Project
-
-Create a new folder for your project.
 
 Open a terminal in the project folder and run the following commands:
 
@@ -48,7 +46,7 @@ npx tsc --init
 npm install uuid @types/uuid
 ```
 
-Open the generated tsconfig.json file and update it with the following configuration:
+Open the generated `tsconfig.json` file and update it with the following configuration:
 
 ```
 {
@@ -64,7 +62,7 @@ Open the generated tsconfig.json file and update it with the following configura
 
 ### Step 2: Create the Types
 
-Create a new file types.ts.
+Create a new file `types.ts`.
 
 Add the following code to types.ts:
 
@@ -133,9 +131,9 @@ export function printCart(user: User): void {
 
 ### Step 3: Create the Driver Code
 
-Create a new file index.ts.
+Create a new file `index.ts`.
 
-Add the following code to index.ts:
+Add the following code to `index.ts`:
 
 ```
 import { createUser, createItem, addToCart, removeFromCart, removeQuantityFromCart, cartTotal, printCart } from './types';
